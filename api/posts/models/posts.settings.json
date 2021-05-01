@@ -1,9 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "beers",
+  "collectionName": "posts",
   "info": {
-    "name": "beers",
-    "description": ""
+    "name": "posts"
   },
   "options": {
     "increments": true,
@@ -19,11 +18,16 @@
       "collection": "file",
       "via": "related",
       "allowedTypes": [
-        "images"
+        "images",
+        "files",
+        "videos"
       ],
       "plugin": "upload",
       "required": false,
       "pluginOptions": {}
+    },
+    "message": {
+      "type": "string"
     }
   }
 }
